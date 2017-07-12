@@ -1,13 +1,11 @@
 # frozen_string_literal: true
 
 def calculate_soul_no(target)
-  result = 0
   loop do
     result = to_s_array(target).map(&:to_i).reduce(:+).to_s
-    break unless result.length >= 2
+    break result unless result.length >= 2
     target = result
   end
-  result
 end
 
 def to_s_array(target)
