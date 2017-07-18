@@ -52,13 +52,13 @@ GAL_LANG_DICTINARY = {
 
 UNICODE = 'U*'.freeze
 
-hex_chars = ARGV[0].unpack(UNICODE).map(&:to_s)
+uni_chars = ARGV[0].unpack(UNICODE).map(&:to_s)
 
-gal_str = hex_chars.map do |hex_ch|
-  if GAL_LANG_DICTINARY.key?(hex_ch)
-    GAL_LANG_DICTINARY[hex_ch]
+gal_str = uni_chars.map do |uni_ch|
+  if GAL_LANG_DICTINARY.key?(uni_ch)
+    GAL_LANG_DICTINARY[uni_ch]
   else
-    hex_ch.to_i.chr('UTF-8')
+    uni_ch.to_i.chr('UTF-8')
   end
 end
 
