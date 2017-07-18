@@ -102,4 +102,4 @@ unicodeに変換するにはArray#unpackメソッドを使います。
 unpackの引数は***U****(String)を使うとUnicodeに変換できます。
 
 unicodeを文字に変換するにはIntegr#chrメソッドを使うと可能です。  
-引数は***UTF-8***(String)を渡してください。  
+引数は**UTF-8**(String)を渡してください。  
